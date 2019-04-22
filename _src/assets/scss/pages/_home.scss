@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: $deepBlue;
+}
+
+.wrapper {
+  margin: 0 20px;
+  height: 100vh;
+}
+
+.main__label {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.page__main {
+  @media all and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.left-side {
+  margin-right: 20px;
+}
+
+.right-side {
+  flex-grow: 1;
+}
+

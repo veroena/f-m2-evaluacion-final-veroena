@@ -11,7 +11,7 @@ const savedFavArr = JSON.parse(localStorage.getItem('Array favoritos'));
 getArr(savedFavArr);
 
 function paintArr(array) {
- if(array.length === 0) {
+ if(array === null) {
    console.log('El array está vacío!');
  } else {
    paintFav(array);

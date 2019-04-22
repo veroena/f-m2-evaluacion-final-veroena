@@ -5,7 +5,6 @@ function saveArr(array) {
 }
 
 function getArr(array) {
-  console.log('savedFavArr', array.length);
   paintArr(array);
 }
 const savedFavArr = JSON.parse(localStorage.getItem('Array favoritos'));

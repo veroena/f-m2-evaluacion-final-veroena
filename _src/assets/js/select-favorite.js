@@ -12,7 +12,6 @@ function pushFav(obj) {
     favArr.splice(find, 1);
   }
   saveArr(favArr);
-  // getArr(favArr);
 }
 
 function newObject(id, name, image) {

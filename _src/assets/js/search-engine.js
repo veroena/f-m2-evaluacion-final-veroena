@@ -57,3 +57,11 @@ const searchEngine = () => {
 }
 
 btn.addEventListener('click', searchEngine);
+
+function enterKey (event) {
+  if(event.keyCode === 13) {
+    searchEngine();
+  }
+}
+
+window.addEventListener('keyup', enterKey);

@@ -21,11 +21,18 @@ const searchEngine = () => {
         resultItemImage.classList.add('result-item__image');
 
         //creo contenido
-        const resultItemTitleContent = document.createTextNode(data[i].show.name);
+        const nameShow = data[i].show.name;
+        const resultItemTitleContent = document.createTextNode(nameShow);
 
         //añado contenido a elementos
         resultItemTitle.appendChild(resultItemTitleContent);
-        resultItemImage.src = data[i].show.image.medium;
+        const imageShow = data[i].show.image;
+        const imagePlaceholder = `https://via.placeholder.com/210x295/ffffff/666666/?text=${nameShow}`;
+        if (imageShow === null) {
+          resultItemImage.src = imagePlaceholder;
+        } else {
+          resultItemImage.src = imageShow.medium;
+        }
 
         //añado elementos dentro de otros elementos
         resultItem.appendChild(resultItemImage);

@@ -19,7 +19,8 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/search-engine.js",
-      "_src/assets/js/select-favorite.js"
+      "_src/assets/js/select-favorite.js",
+      "_src/assets/js/local-storage.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

@@ -2,14 +2,23 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Adalab Web Starter Kit</title>
+	<title>Buscador de series</title>
   <link rel="icon" href="favicon.png"/>
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <div class="page">
-    <partial src="_header.html" label="Header"></partial>
-    <partial src="_main.html" label="Main"></partial>
-  </div>
+  <header>
+    <h1 class="title">Buscador de series</h1>
+  </header>
+  <main>
+    <div class="search-engine">
+      <label for="tv-search" class="main-label">Introduce aquí el nombre de una serie</label>
+      <input type="text" class="input" id="tv-search">
+      <button class="btn">Search</button>
+      </main>
+    </div>
+    <ul class="main-results"></ul>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

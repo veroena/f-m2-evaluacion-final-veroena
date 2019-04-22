@@ -4,6 +4,23 @@ body {
 	height: 100vh;
 }
 
-.main-label {
+//me sale un espacio blanco por arriba pero no sé por qué
+// .main__label {
+//   height: 0;
+//   overflow: hidden;
+//   display: inline-block;
+// }
+
+.main__label {
   display: none;
+}
+
+// .result-item {
+//   display: flex;
+//   align-items: center;
+// }
+
+.selected__favorite {
+  color: white;
+  background-color: black;
 }

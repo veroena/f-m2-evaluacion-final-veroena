@@ -1,14 +1,14 @@
 'use strict';
 
-const input = document.querySelector('.search-input');
-const btn = document.querySelector('.search-btn');
-const listResults = document.querySelector('.main-results');
+const input = document.querySelector('.search__input');
+const btn = document.querySelector('.search__btn');
+const listResults = document.querySelector('.main__results');
 
 const searchEngine = () => {
+  listResults.innerHTML = '';
   fetch(`http://api.tvmaze.com/search/shows?q=${input.value}`)
     .then(response => response.json())
     .then(data => {
-      listResults.innerHTML = '';
       for(let i = 0; i < data.length; i++) {
         // creo elementos
         const resultItem = document.createElement('li');
@@ -40,6 +40,9 @@ const searchEngine = () => {
 
         //añado elementos al HTML
         listResults.appendChild(resultItem);
+
+        //añado listener a los li para la funcionalidad de favoritos
+        resultItem.addEventListener('click', selectFavorite)
       }
     })
 }

@@ -37,13 +37,8 @@ const searchEngine = () => {
           resultItemImage.src = imageShow.medium;
         }
 
-
         //creo objeto para almacenar en el array 
         const objectNew = newObject(data[i].show.id, data[i].show.name,data[i].show.image) 
-
-        //añado listener a los li para la funcionalidad de favoritos. QUITAR LOS DOS ADDEVENTLISTENERS
-        resultItem.addEventListener('click', selectFavorite);
-        resultItem.addEventListener('click', () => {pushFav(objectNew)});
 
         //añado elementos dentro de otros elementos
         resultItem.appendChild(resultItemImage);
@@ -51,16 +46,14 @@ const searchEngine = () => {
 
         //añado elementos al HTML
         listResults.appendChild(resultItem);
+
+
+        //añado listener a los li para la funcionalidad de favoritos. QUITAR LOS DOS ADDEVENTLISTENERS
+        resultItem.addEventListener('click', selectFavorite);
+        resultItem.addEventListener('click', () => {pushFav(objectNew)});
+        resultItem.addEventListener('click', () => {paintFav(favArr)});
       }
     })
 }
 
 btn.addEventListener('click', searchEngine);
-
-function newObject(id, name, image) {
-  return{
-    id: id,
-    name: name,
-    image: image
-  }
-}

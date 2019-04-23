@@ -1,7 +1,7 @@
 'use strict';
 
-function saveArr(array) {
-  localStorage.setItem('Array favoritos', JSON.stringify(array));
+function saveArr() {
+  localStorage.setItem('Array favoritos', JSON.stringify(favArr));
 }
 
 function getArr() {

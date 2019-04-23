@@ -13,6 +13,10 @@ function pushFav(obj) {
       favArr.splice(find, 1);
     }
     saveArr(favArr);
+  } else {
+    favArr = [];
+    favArr.push(obj);
+    saveArr(favArr);
   }
 }
 

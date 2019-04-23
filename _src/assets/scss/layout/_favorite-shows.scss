@@ -12,6 +12,7 @@
 }
 
 .fav-item {
+  max-width: 270px;
   display: flex;
   align-items: center;
   margin: 10px 0;
@@ -26,4 +27,14 @@
   color: white;
   font-size: 18px;
   font-family: $narrow;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.fa-times-circle {
+  font-size: 16px;
+  color: $happyYellow;
+  &:hover {
+    color: white;
+  }
 }

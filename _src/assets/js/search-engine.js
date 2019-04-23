@@ -5,7 +5,7 @@ const btn = document.querySelector('.search__btn');
 const listResults = document.querySelector('.main__results');
 const favList = document.querySelector('.main__results-favorites');
 
-let favArr = [];
+const favArr = [];
 
 const searchEngine = () => {
   listResults.innerHTML = '';

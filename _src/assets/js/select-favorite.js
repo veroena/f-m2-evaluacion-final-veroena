@@ -12,7 +12,6 @@ function pushFav(obj) {
     favArr.splice(find, 1);
   }
   saveArr(favArr);
-  // getArr(favArr);
 }
 
 function newObject(id, name, image) {
@@ -27,7 +26,7 @@ function newObject(id, name, image) {
 function paintFav(array) {
   favList.innerHTML = '';
   if (array.length === 0) {
-    console.log('El array está vacío, maja');
+    console.log('El array está vacío!');
   } else {
     for (let i = 0; i < array.length; i++) {
       //creo elementos

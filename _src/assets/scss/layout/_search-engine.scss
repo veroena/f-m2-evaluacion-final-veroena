@@ -1,0 +1,25 @@
+.search__btn {
+  background-color: $happyYellow;
+  color: white;
+  font-size: 13px;
+  font-family: $orbitron;
+  font-weight: bold;
+  padding: 7px 10px 5px 10px;
+  border: none;
+  border-radius: 5px;
+  transition: ease 0.3s;
+  &:hover {
+    background-color: white;
+    color: $happyYellow;
+  }
+}
+
+.search__input {
+  border: none;
+  height: 22px;
+  width: 169px;
+  border-bottom: solid 1px white;
+  background-color: $mediumBlue;
+  color: white;
+  margin-right: 5px;
+}

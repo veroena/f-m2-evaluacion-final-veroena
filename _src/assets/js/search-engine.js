@@ -30,7 +30,7 @@ const searchEngine = () => {
         //añado contenido a elementos
         resultItemTitle.appendChild(resultItemTitleContent);
         const imageShow = data[i].show.image;
-        const imagePlaceholder = `https://via.placeholder.com/210x295/ffffff/666666/?text=${nameShow}`;
+        const imagePlaceholder = `https://via.placeholder.com/210x295/D4D9D3/C28611/?text=TV`;
         if (imageShow === null) {
           resultItemImage.src = imagePlaceholder;
         } else {
@@ -57,3 +57,11 @@ const searchEngine = () => {
 }
 
 btn.addEventListener('click', searchEngine);
+
+function enterKey (event) {
+  if(event.keyCode === 13) {
+    searchEngine();
+  }
+}
+
+window.addEventListener('keyup', enterKey);

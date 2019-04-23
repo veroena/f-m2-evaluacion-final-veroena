@@ -4,27 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Buscador de series</title>
+  <title>Buscador de series</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Narrow:400,500,600,700|Bree+Serif|Karla:400,700|Open+Sans:400,600,700|Orbitron:400,500,700,900|Russo+One" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <header>
-    <h1 class="title">Buscador de series</h1>
+  <header class="page__header">
+      <h1 class="title">Buscador de series</h1>
   </header>
-  <main>
-    <div class="search-engine">
-      <label for="tv-search" class="main__label">Introduce aquí el nombre de una serie</label>
-      <input type="text" class="search__input" id="tv-search">
-      <button class="search__btn">Search</button>
-      </main>
-    </div>
-    <div class="both-results">
-      <h2 class="sub-title">Mis series favoritas</h2>
-      <ul class="main__results-favorites"></ul>
-      <h2 class="sub-title">Mis series A CHOLÓN</h2>
-      <ul class="main__results"></ul>
-    </div>
-
+  <div class="wrapper">
+    <main class="page__main">
+      <div class="left-side">
+        <div class="search-engine">
+          <label for="tv-search" class="main__label">Introduce aquí el nombre de una serie</label>
+          <input type="text" class="search__input" id="tv-search">
+          <button class="search__btn">Search</button>
+        </div>
+        <div class="favorite-shows">
+          <h2 class="favorite__title">Mis series favoritas</h2>
+          <ul class="main__results-favorites"></ul>
+        </div>
+      </div>
+      <div class="right-side">
+        <ul class="main__results"></ul>
+      </div>
+    </main>
+  </div>
+  
   <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

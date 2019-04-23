@@ -1,0 +1,29 @@
+.favorite__title {
+  color: white;
+  margin: 20px 0 15px 0;
+  font-family: $karla;
+  font-size: 20px;
+}
+
+.main__results-favorites {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fav-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.fav-item__image {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.fav-item__title {
+  color: white;
+  font-size: 18px;
+  font-family: $narrow;
+}

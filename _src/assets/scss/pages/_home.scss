@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: $mediumBlue;
+}
+
+.wrapper {
+  margin: 0 20px;
+  height: 100vh;
+}
+
+.main__label {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.page__main {
+  padding-top: 30px;
+  @media all and (min-width: 450px) {
+    display: flex;
+  }
+}
+
+.left-side {
+  @media all and (min-width: 450px) {
+    min-width: 255px;
+    margin-right: 15px;
+  }
+}
+
+// .right-side {
+//   flex-grow: 1;
+// }
+

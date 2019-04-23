@@ -46,7 +46,7 @@ function paintFav(array) {
        //añado contenido a elementos
        favItemTitle.appendChild(favItemTitleContent);
        const favImageShow = array[i].image;
-       const favImagePlaceholder = `https://via.placeholder.com/210x295/ffffff/666666/?text=${nameShowFav}`;
+       const favImagePlaceholder = `https://via.placeholder.com/210x295/D4D9D3/C28611/?text=TV`;
        if (favImageShow === null) {
          favItemImage.src = favImagePlaceholder;
        } else {

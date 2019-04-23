@@ -7,8 +7,8 @@ function saveArr(array) {
 function getArr(array) {
   paintArr(array);
 }
-const savedFavArr = JSON.parse(localStorage.getItem('Array favoritos'));
-getArr(savedFavArr);
+favArr = JSON.parse(localStorage.getItem('Array favoritos'));
+getArr(favArr);
 
 function paintArr(array) {
  if(array === null) {

@@ -17,18 +17,24 @@ const searchEngine = () => {
         const resultItem = document.createElement('li');
         const resultItemTitle = document.createElement('h3');
         const resultItemImage = document.createElement('img');
+        const resultItemStatus = document.createElement('p');
 
         //añado clases a los elementos
         resultItem.classList.add('result-item');
         resultItemTitle.classList.add('result-item__title');
         resultItemImage.classList.add('result-item__image');
+        resultItem.id = `show${data[i].show.id}`;
+        
 
         //creo contenido
         const nameShow = data[i].show.name;
-        const resultItemTitleContent = document.createTextNode(nameShow);
+        const resultItemTitleContent = document.createTextNode(nameShow); 
+        const statusShow = data[i].show.status;
+        const resultItemStatusContent = document.createTextNode(statusShow)
 
         //añado contenido a elementos
         resultItemTitle.appendChild(resultItemTitleContent);
+        resultItemStatus.appendChild(resultItemStatusContent);
         const imageShow = data[i].show.image;
         const imagePlaceholder = `https://via.placeholder.com/210x295/D4D9D3/C28611/?text=TV`;
         if (imageShow === null) {
@@ -43,6 +49,7 @@ const searchEngine = () => {
         //añado elementos dentro de otros elementos
         resultItem.appendChild(resultItemImage);
         resultItem.appendChild(resultItemTitle);
+        resultItem.appendChild(resultItemStatus);
 
         //añado elementos al HTML
         listResults.appendChild(resultItem);
